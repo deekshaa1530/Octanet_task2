@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url(download.jpeg);background-repeat: no-repeat;background-size: 100%;">
+  <div class="container"><br><br>
+    <center><h1 style="font-size: 50px;font-family: 'Times New Roman', Times, serif;font-style: italic;">TO-DO List</h1>
+    <form id="task-form">
+      <input type="text" id="task-name"style="height:40px;"placeholder="Task Name" required>
+      <input type="date" id="deadline"style="height:40px;" required>
+      <select id="priority"style="height:40px;" required>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <input type="text" id="label" style="height:40px;"placeholder="Label" required>
+      <button type="submit"style="height:40px;background-color:palevioletred;">Add Task</button>
+    </form>
+    <div id="task-list"></div>
+</center>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

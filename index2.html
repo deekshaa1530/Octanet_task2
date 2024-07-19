@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+  <style>
+    .task-list, .completed-task-list {
+      color: white;
+    }
+
+    .task {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    .task-info h3, .task-info p {
+      margin: 5px 0;
+    }
+
+    .task-buttons button {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body style="background-image: url(download.jpeg);background-repeat: no-repeat;background-size: 100%;">
+  <div class="container"><br><br>
+    <center>
+      <h1 style="font-size: 50px;font-family: 'Times New Roman', Times, serif;font-style: italic;color:#F8F8FF;">TO-DO List</h1>
+      <form id="task-form">
+        <input type="text" id="task-name"style="height:40px;" placeholder="Task Name" required>
+        <input type="date" id="deadline"style="height:40px;" required>
+        <select id="priority"style="height:40px;" required>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+        <input type="text" id="label" style="height:40px;" placeholder="Label" required>
+        <button type="submit"style="height:40px;background-color:palevioletred;">Add Task</button>
+      </form>
+      <div id="task-list" class="task-list"></div>
+      <h2 style="font-size: 40px;font-family: 'Times New Roman', Times, serif;font-style: italic;color: #f8f8ff;">Completed Tasks</h2>
+      <div id="completed-task-list" class="completed-task-list"></div>
+    </center>
+  </div>
+  <script src="script1.js"></script>
+</body>
+</html>
